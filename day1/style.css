@@ -1,0 +1,20 @@
+figure{
+    float: right;
+    width: 260px;
+    margin: 0 0 1em 1.4em;
+    padding: 3px;
+    border: 1px solid #c8ccd1;
+    background: #f8f9fa;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+figcaption{
+    font-size: 0.85em;
+    padding: 4px;
+}
