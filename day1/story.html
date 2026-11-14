@@ -4,27 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Story of King Arthur</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:wght@700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-        figure{
-    float: right;
-    width: 260px;
-    margin: 0 0 1em 1.4em;
-    padding: 3px;
-    border: 1px solid #c8ccd1;
-    background: #f8f9fa;
+:root{
+    --paper: #F2E6C2;
+    --paper-dark: #E6D5A8;
+    --ink: #2B2118;
+    --red: #8B1E1E;
+    --gold: #B8860B;
+    --blue: #1F3A5F;
+    --border: #A89060;
 }
 
-figure img{
-    width: 100%;
+body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Old Standard TT", Georgia, serif;
+    line-height: 1.6;
+}
+
+h1{
+    font-family: "UnifrakturMaguntia", serif;
+    color: var(--red);
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-family: "Playfair Display", serif;
+    color: var(--red);
+    border-bottom: 2px solid var(--gold);
+}
+
+a{ color: var(--red); }
+a:hover{ color: var(--blue); }
+
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+mark{
+    background: var(--gold);
+    color: var(--paper);
+}
+
+hr{
+    border: none;
+    border-top: 3px double var(--border);
+}
+
+figure{
+    background: var(--paper-dark);
+    border: 1px solid var(--border);
+}
+
+footer{
+    background: var(--paper-dark);
+    border-top: 3px double var(--border);
+    padding: 1em;
+}
+
+input, textarea{
+    background: var(--paper);
+    border: 1px solid var(--border);
+    font-family: inherit;
+}
+
+button{
+    background: var(--red);
+    color: var(--paper);
+    border: 2px solid var(--gold);
+    padding: 6px 16px;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+}
+button:hover{ background: var(--gold); }
+
+
+
+
+.hero {
+    display: flex;
+    align-items:flex-end;
+    gap: 20px 40px;
+}
+
+#cover-image{
+    flex: 1;
+    text-align: center;
+}
+
+#cover-image img{
+    max-width: 100%;
     height: auto;
-    display: block;
-
 }
 
-figcaption{
-    font-size: 0.85em;
-    padding: 4px;
+figure{
+    width: 400px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 3px;
+    background: var(--paper-dark);
+    border: 1px solid var(--border);
 }
+
+@media (max-width: 800px ) {
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure{
+        width: 80%;
+    }
+}
+
     </style>
     <link rel="icon" href="./image/lancelot.png" type="image/png">
 </head>
@@ -36,9 +132,19 @@ figcaption{
             <a href="./Contact.html">Contact</a>
         </nav>
         <H1>King Arthur</H1>
-        <div id="cover-image">
-
-            <img width="600" height="400" src="./image/cover.png" alt="cover-img">        
+        <div class="hero"> 
+            <div id="cover-image">
+             <img width="500px" height="700px" src="./image/cover.png" alt="cover-img">        
+            </div>
+              <figure>
+    <a href="./image/king.png">
+        <img width="350px" height="350px"  src="./image/king.png" alt="Tapestry of King Arthur" loading="lazy">
+    </a>
+    <figcaption>
+        Tapestry showing Arthur as one of the
+        <a href="https://en.wikipedia.org/wiki/Nine_Worthies" target="_blank">Nine Worthies</a>, c.1400.<sup>[1]</sup>
+    </figcaption>
+</figure>
         </div>
         </header>  
         <main>
@@ -50,7 +156,7 @@ figcaption{
                 
                 <strong>King Arthur</strong> (Welsh: Brenin Arthur; Cornish: Arthur Gernow; Breton: Roue Arzhur; French: <br>  Roi Arthur) was a legendary king of <a href="">Britain.</a> He is a <a href="">folk hero</a> and a central figure in the <br>  medieval literary tradition known as the <a href="">Matter of Britain.</a>
             </p>
-            <figure class="mw-default-size" typeof="mw:File/Thumb" id="mwEQ"><a href="https://en.wikipedia.org/wiki/File:Arth_tapestry2.jpg" class="mw-file-description" id="mwEg"><img resource="https://en.wikipedia.org/wiki/File:Arth_tapestry2.jpg" src="//thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Arth_tapestry2.jpg/250px-Arth_tapestry2.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" decoding="async" loading="lazy" srcset="//thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Arth_tapestry2.jpg/500px-Arth_tapestry2.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x" data-file-width="1067" data-file-height="1873" data-file-type="bitmap" height="439" width="250" class="mw-file-element" id="mwEw"></a><figcaption id="mwFA">Tapestry showing Arthur as one of the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Nine_Worthies" title="Nine Worthies" id="mwFQ">Nine Worthies</a>, c.1400.<sup about="#mwt11" class="mw-ref reference" id="cite_ref-FOOTNOTEKing_Arthur_tapestry_1-0" rel="dc:references" typeof="mw:Transclusion mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{&quot;group&quot;:&quot;&quot;,&quot;name&quot;:&quot;FOOTNOTEKing Arthur tapestry&quot;},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-FOOTNOTEKing_Arthur_tapestry-1&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;sfn&quot;,&quot;href&quot;:&quot;./Template:Sfn&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;King Arthur tapestry&quot;}},&quot;i&quot;:0}}]}"><a href="#cite_note-FOOTNOTEKing_Arthur_tapestry-1" id="mwFg"><span class="mw-reflink-text" id="mwFw"><span class="cite-bracket" id="mwGA">[</span>1<span class="cite-bracket" id="mwGQ">]</span></span></a></sup></figcaption></figure>
+          
         </main>
         <!-- member part -->
             <hr>
