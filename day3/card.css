@@ -1,0 +1,24 @@
+.card-continer{
+border: 30px solid #a12626;
+background-color: #1F3A5F;
+}
+
+.card img{
+    width: 100%; 
+    height: 360px;
+}
+
+.card h1{
+    color: aliceblue;
+   text-align: center;
+}
+
+.card p{
+    color: azure;
+}
+
+.btn button{
+    border: 5px solid beige;
+    float: right;
+    position: relative
+}
